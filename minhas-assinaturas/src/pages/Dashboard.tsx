@@ -2,14 +2,11 @@ import Header from "../components/Header"
 import AddSubscription from "../components/AddSubscription"
 import SubscriptionList from "../components/SubscriptionList"
 import SumaryCard from "../components/SumaryCard"
-import Login from "./Login"
-
 
 function Dashboard() {
   return (
-    <>
-
-      <Login></Login>
+    
+    <div className=" min-h-screen bg-blue-950">
       <Header />
 
       <main>
@@ -17,7 +14,7 @@ function Dashboard() {
         <AddSubscription />
         <SubscriptionList />
       </main>
-    </>
+    </div>
   )
 }
 
