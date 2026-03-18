@@ -5,3 +5,5 @@ export const inputStyle =
 
 export const buttonStyle =
   "w-full bg-brand text-white py-2 rounded-md font-semibold hover:opacity-60 transition mt-4";
+
+export const backgroundStyle = "min-h-screen bg-gradient-to-r from-[#020617] via-[#213B63] to-[#020617]"

@@ -8,6 +8,8 @@ function Dashboard() {
     <div className=" min-h-screen bg-blue-950">
       <Header />
 
+      <h1>Teste</h1>
+
       <main>
         <AddSubscription />
         <SubscriptionList />
