@@ -8,11 +8,13 @@ import Dashboard from './pages/Dashboard'
 function App() {
   return (
     <Routes>
+      {/* Auth */}
       <Route path="/" element={<Register />} />
-      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/login/dashboard" element={<Dashboard />} />
+
+      {/* App */}
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   )
 }

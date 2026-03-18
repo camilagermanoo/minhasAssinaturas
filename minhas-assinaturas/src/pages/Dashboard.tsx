@@ -5,11 +5,8 @@ import SubscriptionList from "../components/SubscriptionList"
 function Dashboard() {
   return (
     
-    <div className=" min-h-screen bg-blue-950">
+    <div className=" min-h-screen">
       <Header />
-
-      <h1>Teste</h1>
-
       <main>
         <AddSubscription />
         <SubscriptionList />
