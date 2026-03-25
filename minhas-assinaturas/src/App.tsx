@@ -1,9 +1,8 @@
-import { Routes, Route } from 'react-router-dom'
-import './index.css'
-import Register from './pages/Register'
-import Login from './pages/Login'
-import Dashboard from './pages/Dashboard'
-
+import { Routes, Route } from "react-router-dom";
+import "./index.css";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       {/* App */}
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

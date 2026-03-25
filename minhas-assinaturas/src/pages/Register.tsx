@@ -1,12 +1,11 @@
-import { Link, useNavigate } from "react-router-dom"
-
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    navigate("/dashboard")
+    e.preventDefault();
+    navigate("/dashboard");
   }
 
   return (
@@ -14,12 +13,23 @@ function Register() {
       <div className="w-full max-w-md bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl shadow-2xl">
         <div className="flex justify-center mb-6">
           <div className="w-16 h-16 flex items-center justify-center rounded-full bg-teal-500/10 border border-teal-400/30">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="rgb(45 212 191)" className="w-7 h-7">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5m0 0h-6a2 2 0 1 1 0-4h6v4z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="rgb(45 212 191)"
+              className="w-7 h-7"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5m0 0h-6a2 2 0 1 1 0-4h6v4z"
+              />
             </svg>
           </div>
         </div>
-   
+
         <h1 className="text-2xl font-bold text-center text-white">
           Criar Conta
         </h1>
@@ -78,7 +88,7 @@ function Register() {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Register
+export default Register;

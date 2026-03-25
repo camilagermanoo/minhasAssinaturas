@@ -9,7 +9,7 @@ function SubscriptionList() {
         <li>Amazon Prime - R$ 14,90</li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default SubscriptionList
+export default SubscriptionList;

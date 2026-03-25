@@ -1,9 +1,5 @@
 function AddSubscription() {
-  return (
-    <button>
-      + Adicionar assinatura
-    </button>
-  )
+  return <button>+ Adicionar assinatura</button>;
 }
 
-export default AddSubscription
+export default AddSubscription;

@@ -1,23 +1,33 @@
-import { Link, useNavigate } from "react-router-dom"
-
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    navigate("/dashboard")
+    e.preventDefault();
+    navigate("/dashboard");
   }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-teal-950 px-4">
       <div className="w-full max-w-md bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl shadow-2xl">
         <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 flex items-center justify-center rounded-full bg-teal-500/10 border border-teal-400/30">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="rgb(45 212 191)" className="w-7 h-7">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5m0 0h-6a2 2 0 1 1 0-4h6v4z"/>
-                </svg>
-            </div>
+          <div className="w-16 h-16 flex items-center justify-center rounded-full bg-teal-500/10 border border-teal-400/30">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="rgb(45 212 191)"
+              className="w-7 h-7"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5m0 0h-6a2 2 0 1 1 0-4h6v4z"
+              />
+            </svg>
+          </div>
         </div>
 
         <h1 className="text-2xl font-bold text-center text-white">
@@ -28,7 +38,6 @@ function Login() {
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-
           <div>
             <label className="text-sm text-gray-300">Email</label>
             <input
@@ -55,13 +64,14 @@ function Login() {
           </button>
         </form>
 
-        <p className="text-center text-gray-400 text-sm mt-6">Não tem conta?{" "}
+        <p className="text-center text-gray-400 text-sm mt-6">
+          Não tem conta?{" "}
           <Link to="/register" className="text-teal-400 hover:underline">
             Cadastre-se
           </Link>
         </p>
       </div>
     </div>
-  )
+  );
 }
-export default Login
+export default Login;
