@@ -4,9 +4,10 @@ import SubscriptionList from "../components/SubscriptionList";
 
 function Dashboard() {
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen bg-[#020617] px-8 py-6">
       <Header />
-      <main>
+
+      <main className="mt-8">
         <AddSubscription />
         <SubscriptionList />
       </main>
@@ -14,4 +15,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Dashboard
